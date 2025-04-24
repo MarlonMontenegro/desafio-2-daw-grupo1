@@ -27,12 +27,9 @@ Los usuarios deben poder:
 
 ### Captura de pantalla
 
-![](./screenshot.jpg)
+![image](https://github.com/user-attachments/assets/d8421f1d-e73a-41af-9eb5-affffbdf6f9c)
+![Animation](https://github.com/user-attachments/assets/67a706e5-7486-46ba-93ee-624e026ba99a)
 
-### Enlaces
-
-- URL del repositorio: [Agrega aquí el link del repositorio](https://tu-repositorio.com)
-- URL del sitio en vivo: [Agrega aquí el link de la app](https://tu-app-en-vivo.com)
 
 ## Nuestro proceso
 
