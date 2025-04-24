@@ -28,8 +28,27 @@ function agregarTransaccion() {
   const monto = parseFloat(document.getElementById("monto").value);
 
   if (!descripcion || isNaN(monto) || monto <= 0) {
-    alert("Por favor completa todos los campos correctamente.");
+    Swal.fire({
+      icon: "error",
+      title: "Campos inválidos",
+      text: "Por favor completa todos los campos correctamente.",
+      confirmButtonText: "Aceptar",
+      background: "#000",
+      color: "#fff",
+    });
     return;
+  } else {
+    Swal.fire({
+      toast: true,
+      position: "bottom-end", // Puedes usar: top-end, top-start, bottom-start, etc.
+      icon: "success",
+      title: "Transacción guardada correctamente",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      background: "#000",
+      color: "#fff",
+    });
   }
 
   transacciones.push({ tipo, descripcion, monto });
