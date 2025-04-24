@@ -1,117 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap");
+
 body {
-    background-color: #e6efef;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+  background-color: #e6efef;
+  margin: 0;
+  font-family: "Cascadia Code", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 600px;
+  max-width: 800px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+  background: #d9e3e6;
+  color: #3a444d;
+  text-align: center;
+  padding: 30px;
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.top p {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.top .box {
+  max-width: 200px;
+  margin: 10px auto;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.ingresos {
+  background: #2a323a;
+  color: white;
+}
+.egresos {
+  border: 1px solid #2a323a;
+  color: #2a323a;
+}
+.porcentaje {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.porcentaje span {
+  background: #2a323a;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ccc;
+}
+.formulario,
+.transacciones {
+  flex: 1;
+  padding: 20px;
+}
+.formulario input,
+.formulario select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 12px;
+}
+.formulario button {
+  padding: 8px 12px;
+  background: #2a323a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.tabs button {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.active {
+  background: #2a323a;
+  color: white;
+}
+.inactive {
+  background: #d9e3e6;
+  color: #9ca9b3;
+}
+.lista {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 12px;
+  border-top: 1px solid #ccc;
+}
+.item:first-child {
+  border-top: none;
+}
+
+/* Teléfonos pequeños (hasta 575px) */
+@media (max-width: 575px) {
   .container {
-    max-width: 800px;
-    margin: 40px auto;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
   }
-  .top {
-    background: #d9e3e6;
-    color: #3a444d;
-    text-align: center;
-    padding: 30px;
-  }
+
   .top h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px;
   }
+
   .top p {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 15px 0;
+    font-size: 24px;
   }
-  .top .box {
-    max-width: 200px;
-    margin: 10px auto;
+
+  .box {
+    font-size: 12px;
+  }
+
+  .formulario,
+  .transacciones {
+    padding: 10px;
+  }
+
+  .formulario input,
+  .formulario select {
     font-size: 14px;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 6px;
   }
-  .ingresos {
-    background: #2a323a;
-    color: white;
-  }
-  .egresos {
-    border: 1px solid #2a323a;
-    color: #2a323a;
-  }
-  .porcentaje {
-    font-size: 12px;
-    margin-top: 10px;
-  }
-  .porcentaje span {
-    background: #2a323a;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 10px;
-  }
-  .bottom {
-    display: flex;
-    flex-wrap: wrap;
-    border-top: 1px solid #ccc;
-  }
-  .formulario, .transacciones {
-    flex: 1;
-    padding: 20px;
-  }
-  .formulario input, .formulario select {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 8px;
-    font-size: 12px;
-  }
+
   .formulario button {
-    padding: 8px 12px;
-    background: #2a323a;
-    color: white;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
   }
+
   .tabs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    flex-direction: column;
+    gap: 5px;
   }
+
   .tabs button {
-    padding: 8px 12px;
-    font-size: 12px;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    width: 100%;
   }
-  .active {
-    background: #2a323a;
-    color: white;
-  }
-  .inactive {
-    background: #d9e3e6;
-    color: #9ca9b3;
-  }
-  .lista {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 13px;
-  }
+
   .item {
-    display: flex;
-    justify-content: space-between;
-    padding: 6px 12px;
-    border-top: 1px solid #ccc;
+    font-size: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
   }
-  .item:first-child {
-    border-top: none;
+}
+
+/* Tablets (entre 576px y 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    width: 95%;
+    margin: 30px auto;
   }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  .formulario,
+  .transacciones {
+    padding: 15px;
+  }
+
+  .formulario button {
+    width: 100%;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tabs button {
+    flex: 1 1 48%;
+  }
+}
