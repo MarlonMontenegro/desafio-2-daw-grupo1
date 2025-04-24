@@ -82,6 +82,7 @@ body {
   padding: 8px;
   font-size: 12px;
 }
+
 .formulario button {
   padding: 8px 12px;
   background: #2a323a;
@@ -90,13 +91,14 @@ body {
   border: none;
   cursor: pointer;
 }
+
 .tabs {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
 }
 .tabs button {
-  padding: 8px 12px;
+  padding: 8px 19px;
   font-size: 12px;
   font-weight: bold;
   border: none;
