@@ -54,7 +54,7 @@ Aprendí a:
 
 Este proyecto fue desarrollado:
 
-- [Andrea Paola Montenegro Paz](https://github.com/andreapaola-m)
+- [Andrea Paola Montenegro Paz](https://github.com/aaaamontenegro)
 - [Mayron Steve Lopez Giron](https://github.com/mayronlopezg)
 - [Alejandro Benjamín Rivera Ochoa](https://github.com/alejandrorivera)
 - [Marlon Eduardo Montenegro Paz](https://github.com/MarlonMontenegro)
